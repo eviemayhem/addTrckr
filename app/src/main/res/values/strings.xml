@@ -1,0 +1,12 @@
+<resources>
+<string name="app_name">addyTrackerVs2</string>
+<string name="dummy_button">Dummy Button</string>
+<string name="dummy_content">DUMMY\nCONTENT</string>
+<string name="logMed">Log Medication</string>
+<string name="logSymp">Log Symptoms</string>
+<string name="crisisScreen">Crisis Screening</string>
+<string name="home">Home</string>
+<string name="med">Meds</string>
+<string name="log">Logs</string>
+<string name="sett">Settings</string>
+</resources>
