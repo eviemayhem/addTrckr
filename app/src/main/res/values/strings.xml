@@ -16,4 +16,13 @@
     <string name="Medication2">Medication #2</string>
     <string name="Med3">Medication #3</string>
     <string name="HowFeel">How Are You Feeling?</string>
+
+    <string-array name="steroids">
+        <item>Hydrocortisone 2.5mg</item>
+        <item>Hydrocortisone 5mg</item>
+        <item>Hydrocortisone 10mg</item>
+        <item>Hydrocortisone 15mg</item>
+        <item>Hydrocortisone 20mg</item>
+        <item>Hydrocortisone 30mg</item>
+    </string-array>
 </resources>
