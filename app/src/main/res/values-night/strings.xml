@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cortico">Corticosteroid</string>
+    <string name="Hydrocortisone">Hydrocortisone 10mg</string>
+    <string name="Stress">Stress Dose</string>
+    <string name="SickDose">Sick Dose</string>
+    <string name="Medication2">Medication #2</string>
+    <string name="HowFeel">How Are You Feeling?</string>
+</resources>
