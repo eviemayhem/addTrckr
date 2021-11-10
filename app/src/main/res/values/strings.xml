@@ -16,6 +16,15 @@
     <string name="Medication2">Medication #2</string>
     <string name="Med3">Medication #3</string>
     <string name="HowFeel">How Are You Feeling?</string>
+    <string name="crisisInfo">An Adrenal Crisis is caused by your body not having enough cortisol. Without cortisol, your body loses the ability to function normally. If not treated, an adrenal crisis can lead to death.</string>
+    <string name="experiencing">Are you currently experiencing any of the following symptoms?</string>
+    <string name="Mild">Mild</string>
+    <string name="Moderate">Moderate</string>
+    <string name="Severe">Severe</string>
+    <string name="Nausea">Nausea</string>
+    <string name="Vomiting">Vomiting</string>
+    <string name="Diarrhea">Diarrhea</string>
+    <string name="Dizziness">Dizziness</string>
 
     <string-array name="steroids">
         <item>Hydrocortisone 2.5mg</item>
