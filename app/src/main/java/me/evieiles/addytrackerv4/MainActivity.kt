@@ -13,6 +13,7 @@ import me.evieiles.addytrackerv4.databinding.ActivityMainBinding
 import me.evieiles.addytrackerv4.databinding.HelpDialogBinding
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Spinner
 import me.evieiles.addytrackerv4.ui.dashboard.DashboardFragment
 
 class MainActivity : AppCompatActivity() {
@@ -27,13 +28,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val steroids = resources.getStringArray(R.array.steroids)
+
 //        // create an array adapter and pass the required parameter
 //        // in our case pass the context, drop down layout , and array.
 //        val arrayAdapter = ArrayAdapter(DashboardFragment, R.layout.steroid_dropdown, steroids)
 //        val steroidChoice = findViewById<AutoCompleteTextView>(R.id.cSteroid)
 //        steroidChoice.setAdapter(arrayAdapter)
 
+//        val corticoSpinner: Spinner = findViewById(R.id.cortSteroid)
+//        val steroids = resources.getStringArray(R.array.steroids)
+//        val arrayAdapter = ArrayAdapter(DashboardFragment, R.layout.steroid_dropdown, steroids)
+//        arrayAdapter.setDropDownViewResource(R.layout.steroid_dropdown)
+//        corticoSpinner.adapter = arrayAdapter
 
 
         val navView: BottomNavigationView = binding.navView

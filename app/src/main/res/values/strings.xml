@@ -16,6 +16,7 @@
     <string name="Medication2">Medication #2</string>
     <string name="Med3">Medication #3</string>
     <string name="HowFeel">How Are You Feeling?</string>
+    <string name="emerInj">Emergency Injection</string>
 
     <string-array name="steroids">
         <item>Hydrocortisone 2.5mg</item>
@@ -24,5 +25,11 @@
         <item>Hydrocortisone 15mg</item>
         <item>Hydrocortisone 20mg</item>
         <item>Hydrocortisone 30mg</item>
+    </string-array>
+
+    <string-array name="secondaryMeds">
+        <item>Adderal XR 10mg</item>
+        <item>Propanolol ER 60mg</item>
+        <item>Zofran 0.5mg</item>
     </string-array>
 </resources>
