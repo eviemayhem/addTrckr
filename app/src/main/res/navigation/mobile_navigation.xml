@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id = "@+id/navigation_log"
+        android:name="me.evieiles.addytrackerv4.ui.Logs.Log"
+        android:label="Logs"
+        tools:layout="@layout/log_fragment" />
+
+    <fragment
         android:id="@+id/navigation_dashboard"
         android:name="me.evieiles.addytrackerv4.ui.dashboard.DashboardFragment"
         android:label="@string/med"
