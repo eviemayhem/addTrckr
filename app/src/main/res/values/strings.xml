@@ -17,7 +17,18 @@
     <string name="Med3">Medication #3</string>
     <string name="HowFeel">How Are You Feeling?</string>
     <string name="emerInj">Emergency Injection</string>
+    <string name="crisisInfo">An Adrenal crisis is a life threatening condition that requires emergency intervention. If you believe you may be experiencing an adrenal crisis, please use your emergency injector and head to the nearest Emergency Room.</string>
+    <string name="experiencing">Are you current experiencing any of the following?</string>
+    <string name="nausea">Nausea</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="faint">Fainting</string>
+    <string name="dizziness">Dizziness</string>
+    <string name="lowbp">Low Blood Pressure</string>
+    <string name="tremors">Tremors</string>
+    <string name="submit">Submit</string>
 
+    <!--Spinner Array Settings -->
     <string-array name="steroids">
         <item>Hydrocortisone 2.5mg</item>
         <item>Hydrocortisone 5mg</item>
@@ -32,4 +43,13 @@
         <item>Propanolol ER 60mg</item>
         <item>Zofran 0.5mg</item>
     </string-array>
+
+    <string-array name ="thirdMeds">
+        <item>Multivitamin</item>
+        <item>Vitamin D 500mg</item>
+        <item>Klonopin 0.5mg</item>
+        <item>Klonopin 1mg</item>
+        <item>Melatonin 5mg</item>
+    </string-array>
+
 </resources>

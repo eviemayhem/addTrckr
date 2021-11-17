@@ -14,8 +14,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import me.evieiles.addytrackerv4.R
 import me.evieiles.addytrackerv4.databinding.FragmentMedsBinding
+import me.evieiles.addytrackerv4.ui.home.HomeFragment
 
 class DashboardFragment : Fragment() {
+
 
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentMedsBinding? = null
@@ -40,8 +42,43 @@ class DashboardFragment : Fragment() {
 
         return root
     }
+    companion object{
+        fun newInstance(): DashboardFragment {
+            return DashboardFragment()
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
 
+        //CorticoSpinner Settings
+        val corticoSpinner: Spinner = binding.cortSteroid
+        val steroids = resources.getStringArray(R.array.steroids)
+        val arrayAdapter1 = ArrayAdapter.createFromResource(requireContext(), R.array.steroids, android.R.layout.simple_spinner_dropdown_item)
+        arrayAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        corticoSpinner.adapter = arrayAdapter1
+
+        //Secondary Med Spinner Settings
+        val secondarySpinner: Spinner = binding.secondSteroid
+        val secondMeds = resources.getStringArray(R.array.secondaryMeds)
+        val arrayAdapter2 = ArrayAdapter.createFromResource(requireContext(), R.array.secondaryMeds, android.R.layout.simple_spinner_dropdown_item)
+        arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        secondarySpinner.adapter = arrayAdapter2
+
+        //Third med Spinner Settings
+        val thirdSpinner : Spinner = binding.thirdMed
+        val thirdMeds = resources.getStringArray(R.array.thirdMeds)
+        val arrayAdapter3 = ArrayAdapter.createFromResource(requireContext(), R.array.thirdMeds, android.R.layout.simple_spinner_dropdown_item)
+        arrayAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        thirdSpinner.adapter = arrayAdapter3
+
+
+
+
+        //use On item selected listener
+        //Position will correlate to item index to figure out which one was selected.
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

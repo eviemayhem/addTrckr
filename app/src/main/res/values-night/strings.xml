@@ -7,4 +7,14 @@
     <string name="Medication2">Medication #2</string>
     <string name="HowFeel">How Are You Feeling?</string>
     <string name="emerInj">Emergency Injection</string>
+    <string name="crisisInfo">An Adrenal crisis is a life threatening condition that requires emergency intervention. If you believe you may be experiencing an adrenal crisis, please use your emergency injector and head to the nearest Emergency Room.</string>
+    <string name="experiencing">Are you current experiencing any of the following?</string>
+    <string name="nausea">Nausea</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="faint">Fainting</string>
+    <string name="dizziness">Dizziness</string>
+    <string name="lowbp">Low Blood Pressure</string>
+    <string name="tremors">Tremors</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#B7FBFBFB"
     tools:context=".ui.dashboard.DashboardFragment">
 
 
     <Spinner
         android:id="@+id/cortSteroid"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+
         android:layout_width="375dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:background="#f8f3f3"
         android:backgroundTint="#F8F3F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +24,13 @@
 
     <Spinner
         android:id="@+id/secondSteroid"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+
         android:layout_width="375dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="8dp"
+        android:background="#F8F4F4"
         android:backgroundTint="#F8F4F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
@@ -36,12 +39,13 @@
 
     <Spinner
         android:id="@+id/thirdMed"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+
         android:layout_width="375dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:background="#F8F4F4"
         android:backgroundTint="#FBFAFA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
@@ -56,6 +60,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/cortico"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,6 +72,7 @@
         android:layout_marginTop="84dp"
         android:text="@string/Medication2"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cortSteroid" />
 
@@ -78,6 +84,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/Med3"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondSteroid" />
 

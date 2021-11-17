@@ -1,6 +1,8 @@
 package me.evieiles.addytrackerv4
 
 import android.app.Dialog
+import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -29,19 +31,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-//        // create an array adapter and pass the required parameter
-//        // in our case pass the context, drop down layout , and array.
-//        val arrayAdapter = ArrayAdapter(DashboardFragment, R.layout.steroid_dropdown, steroids)
-//        val steroidChoice = findViewById<AutoCompleteTextView>(R.id.cSteroid)
-//        steroidChoice.setAdapter(arrayAdapter)
-
-//        val corticoSpinner: Spinner = findViewById(R.id.cortSteroid)
-//        val steroids = resources.getStringArray(R.array.steroids)
-//        val arrayAdapter = ArrayAdapter(DashboardFragment, R.layout.steroid_dropdown, steroids)
-//        arrayAdapter.setDropDownViewResource(R.layout.steroid_dropdown)
-//        corticoSpinner.adapter = arrayAdapter
 
 
+        //sets up Navbar View
         val navView: BottomNavigationView = binding.navView
         //Sets questionmark icon as button to trigger help popup.
         btnHelp = findViewById<ImageView>(R.id.btnHelp)
@@ -52,9 +44,6 @@ class MainActivity : AppCompatActivity() {
             dialog.setContentView(R.layout.help_dialog)
             dialog.show()
         }
-
-
-
 
 
 

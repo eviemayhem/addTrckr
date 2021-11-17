@@ -12,6 +12,7 @@
         android:layout_height="450px"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="140dp"
+        android:clickable="true"
         android:src="@drawable/med"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
@@ -19,24 +20,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/sympCheck"
         android:layout_width="450px"
         android:layout_height="450px"
         android:layout_marginTop="24dp"
+        android:clickable="true"
         android:src="@drawable/symp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/medCheck" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/crisisCheck"
         android:layout_width="450px"
         android:layout_height="450px"
         android:layout_marginTop="24dp"
+        android:clickable="true"
         android:src="@drawable/crisis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/sympCheck" />
 
     <TextView
         android:id="@+id/text_home"
@@ -83,9 +86,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="@string/logSymp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+        app:layout_constraintBottom_toBottomOf="@+id/sympCheck"
+        app:layout_constraintEnd_toEndOf="@+id/sympCheck"
+        app:layout_constraintStart_toStartOf="@+id/sympCheck" />
 
     <TextView
         android:id="@+id/logCrisis"
@@ -93,8 +96,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="@string/crisisScreen"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+        app:layout_constraintBottom_toBottomOf="@+id/crisisCheck"
+        app:layout_constraintEnd_toEndOf="@+id/crisisCheck"
+        app:layout_constraintStart_toStartOf="@+id/crisisCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
