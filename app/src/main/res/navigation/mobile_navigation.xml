@@ -13,7 +13,7 @@
 
     <fragment
         android:id = "@+id/navigation_log"
-        android:name="me.evieiles.addytrackerv4.ui.Logs.Log"
+        android:name="me.evieiles.addytrackerv4.ui.Logs.LogActivity"
         android:label="Logs"
         tools:layout="@layout/log_fragment" />
 

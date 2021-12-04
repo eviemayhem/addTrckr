@@ -4,7 +4,7 @@
     android:id="@+id/navigation_log"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Logs.Log">
+    tools:context=".ui.Logs.LogActivity">
 
     <TextView
         android:layout_width="match_parent"

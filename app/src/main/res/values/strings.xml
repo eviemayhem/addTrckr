@@ -27,6 +27,9 @@
     <string name="lowbp">Low Blood Pressure</string>
     <string name="tremors">Tremors</string>
     <string name="submit">Submit</string>
+    <string name="logtypeString">Log Type</string>
+    <string name="Cster">Corticosteroid</string>
+    <string name="date">Date</string>
 
     <!--Spinner Array Settings -->
     <string-array name="steroids">
