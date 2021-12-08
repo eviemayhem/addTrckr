@@ -22,9 +22,6 @@ class LogActivity : Fragment() {
         fun newInstance() = LogActivity()
     }
 
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
