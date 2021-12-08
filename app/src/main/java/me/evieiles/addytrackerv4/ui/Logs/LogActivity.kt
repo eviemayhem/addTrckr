@@ -31,17 +31,17 @@ class LogActivity : Fragment() {
         logRecyclerView = view.findViewById<RecyclerView>(R.id.logRecyclerView)
         logRecyclerView.layoutManager = LinearLayoutManager(context)
 
-        updateUI()
+      //updateUI()
 
         return view
     }
 
-    private fun updateUI(){
-        val viewModel: LogListViewModel by activityViewModels()
-        val logs = viewModel.logs
-        adapter = RecyclerAdapter(logs)
-        logRecyclerView.adapter = adapter
-    }
+//    private fun updateUI(){
+//        val viewModel: LogListViewModel by activityViewModels()
+//        val logs = viewModel.logs
+//        adapter = RecyclerAdapter(logs)
+//        logRecyclerView.adapter = adapter
+//    }
 
     //holds the layout view for reycler view
     private inner class RecyclerHolder(view:View): RecyclerView.ViewHolder(view){

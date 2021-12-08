@@ -1,8 +1,6 @@
 package me.evieiles.addytrackerv4
 
 import android.app.Dialog
-import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -12,11 +10,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import me.evieiles.addytrackerv4.databinding.ActivityMainBinding
-import me.evieiles.addytrackerv4.databinding.HelpDialogBinding
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.Spinner
-import me.evieiles.addytrackerv4.ui.dashboard.DashboardFragment
 
 class MainActivity : AppCompatActivity() {
 

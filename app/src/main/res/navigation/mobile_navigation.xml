@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="me.evieiles.addytrackerv4.ui.dashboard.DashboardFragment"
+        android:name="me.evieiles.addytrackerv4.ui.dashboard.MedFragment"
         android:label="@string/med"
         tools:layout="@layout/fragment_meds" />
 
