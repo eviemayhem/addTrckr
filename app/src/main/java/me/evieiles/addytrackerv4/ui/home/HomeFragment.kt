@@ -40,13 +40,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
             textView.text = it
         })
 
-        //Medcheck button functionality should go to med logger
 
-        fun onClick(v: View?) {
-
-            val medFragment = FragmentMedsBinding.newInstance(MedFragment.id)
-            parentFragmentManager.beginTransaction().replace(R.id.medContainer,medFragment).addToBackStack(null).commit()
-        }
         return root
     }
 
