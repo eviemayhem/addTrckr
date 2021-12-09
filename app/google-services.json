@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486336494977",
+    "project_id": "addytracker-ba387",
+    "storage_bucket": "addytracker-ba387.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486336494977:android:84d4dac3c7224db88c3c80",
+        "android_client_info": {
+          "package_name": "me.evieiles.addytrackerv4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486336494977-h1fvbfuu65aj18p3915ms9vhlofq4tue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm4dbafMhORqL6hww5j9QyJQYC0jY5ORA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486336494977-h1fvbfuu65aj18p3915ms9vhlofq4tue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

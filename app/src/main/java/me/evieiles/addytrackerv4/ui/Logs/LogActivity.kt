@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import me.evieiles.addytrackerv4.MedLog
 import me.evieiles.addytrackerv4.R
+import me.evieiles.addytrackerv4.databinding.RecyclerHolderBinding
 
 class LogActivity : Fragment() {
     private lateinit var logRecyclerView: RecyclerView
@@ -31,37 +32,37 @@ class LogActivity : Fragment() {
         logRecyclerView = view.findViewById<RecyclerView>(R.id.logRecyclerView)
         logRecyclerView.layoutManager = LinearLayoutManager(context)
 
-      //updateUI()
+      updateUI()
 
         return view
     }
 
-//    private fun updateUI(){
-//        val viewModel: LogListViewModel by activityViewModels()
-//        val logs = viewModel.logs
-//        adapter = RecyclerAdapter(logs)
-//        logRecyclerView.adapter = adapter
-//    }
+    private fun updateUI(){
+        val viewModel: LogListViewModel by activityViewModels()
+        val logs = viewModel.logs
+        adapter = RecyclerAdapter(logs)
+        logRecyclerView.adapter = adapter
+    }
 
     //holds the layout view for reycler view
-    private inner class RecyclerHolder(view:View): RecyclerView.ViewHolder(view){
-        val logTextView:TextView = itemView.findViewById<TextView>(R.id.logTypeText)
-        val dateTextView:TextView = itemView.findViewById(R.id.dateText)
-        val cortTextView:TextView = itemView.findViewById(R.id.cortSteroidText)
-        val med2TextView:TextView = itemView.findViewById(R.id.med2Text)
-        val med3TextView:TextView = itemView.findViewById(R.id.med3Text)
-        val erInjTextView:TextView = itemView.findViewById(R.id.erInjText)
-        val sympTextView:TextView = itemView.findViewById(R.id.sympText)
+    private inner class RecyclerHolder(var rHolderBinding: RecyclerHolderBinding): RecyclerView.ViewHolder(rHolderBinding.root){
+        val logTextView:TextView = rHolderBinding.logTypeText
+        val dateTextView:TextView = rHolderBinding.dateText
+        val cortTextView:TextView = rHolderBinding.cortSteroidText
+        val med2TextView:TextView = rHolderBinding.med2Text
+        val med3TextView:TextView = rHolderBinding.med3Text
+        val erInjTextView:TextView = rHolderBinding.erInjText
+        val sympTextView:TextView = rHolderBinding.sympText
 
     }
 
     //recyclerView Adapter
-    private abstract inner class RecyclerAdapter(var logs: List<MedLog>)
+    private inner class RecyclerAdapter(var logs: List<MedLog>)
         : RecyclerView.Adapter<RecyclerHolder>(){
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
                 RecyclerHolder {
-            val view = layoutInflater.inflate(R.layout.log_recyclerview, parent, false)
+            val view = RecyclerHolderBinding.inflate(layoutInflater, parent, false)
             return RecyclerHolder(view)
         }
 
