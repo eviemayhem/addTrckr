@@ -20,4 +20,8 @@ class LogListViewModel: ViewModel(){
 //    }
     private val logRepository = LogRepository.get()
      val logListLiveData = logRepository.getLogs()
+
+    fun addLog(log : MedLog){
+        logRepository.addLog(log)
+    }
 }

@@ -1,12 +1,15 @@
 package me.evieiles.addytrackerv4.ui.Logs
 
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LiveData
@@ -17,9 +20,15 @@ import androidx.recyclerview.widget.RecyclerView
 import me.evieiles.addytrackerv4.MedLog
 import me.evieiles.addytrackerv4.R
 import me.evieiles.addytrackerv4.databinding.RecyclerHolderBinding
+import java.util.*
 
 class LogActivity : Fragment() {
     private lateinit var logRecyclerView: RecyclerView
+    /**Required interface for hosting activities*/
+    interface Callbacks {
+        fun onLogSelected(logId: UUID)
+    }
+    private var callbacks: Callbacks? = null
 
 //    private var adapter: RecyclerAdapter? = null
     private var adapter: RecyclerAdapter? = RecyclerAdapter(emptyList())
@@ -30,6 +39,12 @@ class LogActivity : Fragment() {
 
     companion object {
         fun newInstance() = LogActivity()
+    }
+
+    //Callback attachment
+    override fun onAttach(context: Context){
+        super.onAttach(context)
+        callbacks = context as Callbacks?
     }
 
     override fun onCreateView(
@@ -47,10 +62,12 @@ class LogActivity : Fragment() {
         return view
     }
 
+    //updates and refreshes UI when called
     private fun updateUI(logs: List<MedLog>){
         adapter = RecyclerAdapter(logs)
         logRecyclerView.adapter = adapter
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -63,6 +80,12 @@ class LogActivity : Fragment() {
                 }
             }
         )
+    }
+
+    //callback detach
+    override fun onDetach(){
+        super.onDetach()
+        callbacks = null
     }
 
 
@@ -88,7 +111,10 @@ class LogActivity : Fragment() {
             return RecyclerHolder(view)
         }
 
+
         override fun getItemCount() =logs.size
+
+
 
         override fun onBindViewHolder(holder: RecyclerHolder, position: Int) {
             val log = logs[position]
@@ -102,7 +128,9 @@ class LogActivity : Fragment() {
                 sympTextView.text = log.symptoms
             }
 
-
+            fun onClick(v : View?){
+                callbacks?.onLogSelected(log.id)
+            }
         }
 
 

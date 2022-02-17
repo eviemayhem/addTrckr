@@ -2,6 +2,7 @@ package me.evieiles.addytrackerv4
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,12 +11,20 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import me.evieiles.addytrackerv4.databinding.ActivityMainBinding
+import me.evieiles.addytrackerv4.ui.Logs.LogActivity
+import me.evieiles.addytrackerv4.ui.dashboard.MedFragment
+import me.evieiles.addytrackerv4.ui.home.HomeFragment
+import me.evieiles.addytrackerv4.ui.notifications.LogFragment
+import java.util.*
 
-class MainActivity : AppCompatActivity() {
+private const val TAG = "MainActivity"
+class MainActivity : AppCompatActivity(), LogActivity.Callbacks {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var btnHelp: ImageView;
     private lateinit var dialog: Dialog;
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +66,10 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    override fun onLogSelected(logId: UUID) {
+       val fragment = LogFragment.newInstance(logId)
+        supportFragmentManager.beginTransaction().replace(R.layout.log_fragment, fragment).addToBackStack(null).commit()
+    }
     }
 
 

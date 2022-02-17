@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="me.evieiles.addytrackerv4.ui.notifications.NotificationsFragment"
+        android:name="me.evieiles.addytrackerv4.ui.notifications.LogFragment"
         android:label="@string/sett"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
